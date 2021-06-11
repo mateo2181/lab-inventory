@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reactivos",
+  "info": {
+    "name": "reactivos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "model": "items",
+      "via": "reactivos"
+    },
+    "expiration_date": {
+      "type": "date"
+    },
+    "lote": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "closed",
+        "current",
+        "finished"
+      ]
+    }
+  }
+}

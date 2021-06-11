@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reactivos",
+      "handler": "reactivos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reactivos/count",
+      "handler": "reactivos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reactivos/:id",
+      "handler": "reactivos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reactivos",
+      "handler": "reactivos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reactivos/:id",
+      "handler": "reactivos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reactivos/:id",
+      "handler": "reactivos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
